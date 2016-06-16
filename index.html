@@ -13,6 +13,10 @@
     <meta name="author" content="Puneeth">
     <!--Title of the Web Page-->
     <title>My Example</title>
+    <!--Used for IE 9 : HTML5shiv is a javascript workaround to provide support for the new HTML 5 elements in IE Browsers older than IE 9-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
     <!--Scripts can be both in head and body-->
     <script type="text/javascript" href="assets/script.js"></script>
@@ -20,7 +24,117 @@
 <!--Everything what we want to display comes under body tag-->
 <body>
     <h1>HTML 5 Example</h1>
+    <aside>
+    <div>
+        <h3>Input Types:</h3>
+        <p>
+            <label>Email: </label>
+            <input type="email" autofocus="autofocus" autocomplete="on" placeholder="Email ID"/> <!-- Accepts email and can validate -->
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" placeholder="********"/><!--Input for Password Field-->
+        </p>
+        <p>
+            <label>Phone Number: </label>
+            <input type="tel" /> <!-- Accepts phone number-->
+        </p>
+        <p>
+            <label>Checkbox: </label>
+            <input type="checkbox"/><!--Checkbox-->
+        </p>
+        <p>
+            <label>Radio: </label>
+            <input type="radio"/><!--Radio button-->
+        </p>
+        <p>
+            <label>Hidden: </label>
+            <input type="hidden"/><!--Hidden-->
+        </p>
+        <p>
+            <label>Reset: </label>
+            <input type="reset"/><!--Reset button-->
+        </p>
+        <p>
+            <label>Submit: </label>
+            <input type="submit"/><!--Submit button-->
+        </p>
+        <p>
+            <label>Attach File: </label>
+            <input type="file"/><!--Attach a file-->
+        </p>
+        <p>
+            <label>Color Picker: </label>
+            <input type="color" /> <!-- Opens Color Chooser -->
+        </p>
+        <p>
+            <label>Date: </label>
+            <input type="date" /> <!-- Provides a date selector -->
+        </p>
+        <p>
+            <label>Date and Time: </label>
+            <input type="datetime-local" /> <!-- Provides a datetime selector (no time zone) -->
+        </p>
+        <p>
+            <label>Month: </label>
+            <input type="month" /> <!-- Provides a month selector -->
+        </p>
+        <p>
+            <label>Week: </label>
+            <input type="week" /> <!-- Provides a week selector -->
+        </p>
+        <p>
+            <label>Time: </label>
+            <input type="time" /> <!-- Provides a time selector -->
+        </p>
+        <p>
+            <label>Text: </label>
+            <input type="text"/><!--Text input-->
+        </p>
+
+        <p>
+            <label>Number: </label>
+            <input type="number" /> <!-- Accepts numeric value and can validate -->
+        </p>
+        <p>
+            <label>Range: </label>
+            <input type="range" min="1" max="100"/> <!-- May provides range selector -->
+        </p>
+        <p>
+            <label>Search: </label>
+            <input type="search" /> <!-- Behaves like search field -->
+        </p>
+        <p>
+            <label>URL: </label>
+            <input type="url" /> <!-- Accepts url value and can validate -->
+        </p>
+        <p>
+            <label>Meter: </label>
+            <meter min="0" max="100" value="91">A+</meter>
+        </p>
+        <p>
+            <lable>Progress: </lable>
+            <progress>working...</progress>
+        </p>
+        <p>
+            <label>Progress: </label>
+            <progress value="75" max="100">working...</progress>
+        </p>
+        <p>
+            <label>List: </label>
+            <input list="cars"/>
+            <datalist id="cars">
+                <option value="BMW"/>
+                <option value="Ford"/>
+                <option value="Volvo"/>
+            </datalist>
+        </p>
+
+    </div>
+    </aside>
+
+
     <!--Recommended to write all the scripts at the bottom of the body, after HTML page is loaded-->
-        <script type="text/javascript" href="assets/script.js"></script>
+    <script type="text/javascript" href="assets/script.js"></script>
 </body>
 </html>
