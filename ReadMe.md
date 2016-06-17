@@ -22,7 +22,7 @@ Few HTML5 Semantics:
 
 Data Attributes:
 data-* attributes is used to store custom data private to the page or application
-'''html
+'''
 <ul>
   <li data-animal-type="bird">Owl</li>
   <li data-animal-type="fish">Salmon</li> 
